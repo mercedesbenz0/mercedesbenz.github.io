@@ -1,0 +1,43 @@
+<h1>🡻相关信息</h1>
+<p>车架号：WDDNG5EBXCA481565</p>
+<p>车型号：S300L</p>
+<p>底盘号：221154</p>
+<p>发动机型号：272.946</p>
+<p>变速箱型号：722.999</p>
+<p>项目名称：仪表亮电瓶的故障灯，前SAM数据丢失，利用原车的软件号和设码数据重新编程设码即可</p>
+<p>准备文件：SAMF221.CBF</p>
+<p>特别说明：SAMF221编程和设码都不需要解锁，编程完后需要先把软件重置一下再进行设码，否则会报错</p>
+<video width="600" height="900" controls="controls">
+  <source src="video/S221前SAM故障视频.mp4" type="video/mp4" />
+</video>
+<h1>1🡻利用DAS获取控制单元当前的信息</h1>
+<img style="max-width:100%;overflow:hidden;" src="picture/SAMF221kzdyxx.jpg" alt="">
+<h1>2🡻从控制单元获取到的信息，准备好相应的通讯文件(CBF)和编程文件(CFF)</h1>
+<img style="max-width:100%;overflow:hidden;" src="picture/SAMF221txhbcwj.png" alt="">
+<h1>3🡻打开DTS保存前SAM控制单元的设码数据(不需要解锁)</h1>
+<img style="max-width:100%;overflow:hidden;" src="picture/SAMF221smsjbc.png" alt="">
+<h1>4🡻查看一下设码数据</h1>
+<img style="max-width:100%;overflow:hidden;" src="picture/SAMF221smwj.png" alt="">
+<h1>5🡻加载编程文件</h1>
+<img style="max-width:100%;overflow:hidden;" src="picture/SAMF221jzbcwj1.png" alt="">
+<img style="max-width:100%;overflow:hidden;" src="picture/SAMF221jzbcwj2.png" alt="">
+<h1>6🡻开始编程(不需要解锁)</h1>
+<img style="max-width:100%;overflow:hidden;" src="picture/SAMF221ksbc1.png" alt="">
+<img style="max-width:100%;overflow:hidden;" src="picture/SAMF221ksbc2.png" alt="">
+<h1>7🡻当Stop按钮(绿色背景)变为Run按钮(白色背景)并且进度条变为100%表示编程成功完成</h1>
+<img style="max-width:100%;overflow:hidden;" src="picture/SAMF221bcjs.png" alt="">
+<h1>8🡻如果编程完直接设码会报错</h1>
+<img style="max-width:100%;overflow:hidden;" src="picture/SAMF221smbc.png" alt="">
+<h1>9🡻编程完之后需要将软件重置一下</h1>
+<img style="max-width:100%;overflow:hidden;" src="picture/DTSrjcz.png" alt="">
+<img src="">
+<h1>10🡻加载保存好的设码文件</h1>
+<img style="max-width:100%;overflow:hidden;" src="picture/SAMF221jzsmwj1.png" alt="">
+<img style="max-width:100%;overflow:hidden;" src="picture/SAMF221jzsmwj2.png" alt="">
+<h1>11🡻可以看到编程完很多区段设码数据有改变</h1>
+<img style="max-width:100%;overflow:hidden;" src="picture/SAMF221cksmwjdbt.png" alt="">
+<h1>12🡻对前SAM控制单元设码(不需要同步到底层数据)</h1>
+<img style="max-width:100%;overflow:hidden;" src="picture/SAMF221kssm1.png" alt="">
+<img style="max-width:100%;overflow:hidden;" src="picture/SAMF221kssm2.png" alt="">
+<h1>13🡻设码完成后直接退出DTS，然后在DAS中删除全车控制单元中的故障代码就完成</h1>
+<img style="max-width:100%;overflow:hidden;" src="picture/SAMF221scgzdm.png" alt="">
